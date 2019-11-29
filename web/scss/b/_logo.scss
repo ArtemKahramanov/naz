@@ -1,0 +1,16 @@
+.logo {
+  display: inline-block;
+
+  a {
+    display: block;
+    border-bottom: none;
+    &:hover {
+      text-decoration: none;
+      border-bottom: none;
+    }
+  }
+
+  &__img {
+    max-width: 300px;
+  }
+}

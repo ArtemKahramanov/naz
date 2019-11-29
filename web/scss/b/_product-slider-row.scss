@@ -1,0 +1,13 @@
+.product-slider-row {
+  display: flex;
+  justify-content: space-around;
+  padding: 5px;
+
+  .title {
+    margin-bottom: 25px;
+  }
+
+  .text {
+    margin-bottom: 15px;
+  }
+}

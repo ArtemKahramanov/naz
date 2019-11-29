@@ -1,0 +1,33 @@
+.pagination {
+
+  li a, li span {
+    position: relative;
+    display: block;
+    padding: .5rem .75rem;
+    margin-left: -1px;
+    line-height: 1.1;
+    color: $black;
+    background-color: #fff;
+    border: 1px solid $primary;
+    transition: $animate;
+
+    &:hover {
+      background: $primary;
+      color: #fff;
+    }
+  }
+
+  .active a{
+    background: $primary;
+    color: #fff;
+  }
+
+  .prev a, .prev span{
+    border-radius: 4px 0 0 4px;
+  }
+
+  .next a, .next span{
+    border-radius: 0 4px 4px 0;
+  }
+
+}

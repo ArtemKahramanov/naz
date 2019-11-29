@@ -1,0 +1,23 @@
+.input {
+  height: 30px;
+  font-weight: 300;
+  padding: 0 8px;
+
+  &--search {
+    width: 100%;
+    position: relative;
+    color: #7a7a7a;
+    border-radius: 4px;
+    background: #ffffff;
+    height: 36px;
+    padding-left: 12px;
+    border: 1px solid #e8e8e8;
+    box-shadow: 1px 1px 3px #cecece;
+  }
+
+  &--count {
+    max-width: 60px;
+    border-radius: 4px;
+    border: 1px solid #e9ecef;
+  }
+}

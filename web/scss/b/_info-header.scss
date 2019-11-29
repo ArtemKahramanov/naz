@@ -1,0 +1,10 @@
+.info-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  &__text {
+    max-width: 200px;
+    font-size: 15px;
+  }
+}

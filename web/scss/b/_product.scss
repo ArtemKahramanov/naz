@@ -1,0 +1,50 @@
+.product {
+
+  &__info {
+    text-align: center;
+    .price {
+      font-size: 20px;
+      margin-bottom: 15px;
+    }
+  }
+
+  &__row {
+    align-items: center;
+    margin-bottom: 25px;
+    background: #f1f1f1;
+    padding: 15px 0;
+    border-radius: 4px;
+  }
+
+  &__price {
+    font-size: 18px;
+    margin-bottom: 15px;
+
+    .price{
+      font-size: 23px;
+      &:after {
+        font-size: 18px;
+      }
+    }
+  }
+
+  .tab-pane {
+    padding-top: 25px;
+
+    table {
+      width: 100% !important;
+      max-width: 100%;
+      margin-bottom: 1rem;
+      background-color: transparent;
+    }
+    table tbody tr:nth-of-type(odd) {
+      background-color: rgba(0,0,0,.05);
+    }
+    table td, table th {
+      padding: .75rem;
+      vertical-align: top;
+      border-top: 1px solid #dee2e6;
+    }
+  }
+
+}

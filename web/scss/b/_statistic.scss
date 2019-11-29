@@ -1,0 +1,28 @@
+.statistic {
+  background: url('/img/metall.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .row {
+    margin-bottom: 0;
+  }
+
+  &__title {
+    font-size: 50px;
+    font-weight: bold;
+  }
+
+  &__desc {
+    font-size: 21px;
+    margin-bottom: 0;
+  }
+
+  .col-md-3 {
+    color: #fff;
+    text-align: center;
+  }
+}

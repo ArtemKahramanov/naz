@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,900');
+
+html,
+body {
+  height: 100%;
+  font-size: 16px;
+  color: #333;
+  font-family: Roboto, Sans-Serif;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+}
+
+h1, h2, h3, b {
+  font-family: Roboto, Sans-Serif;
+}
+
+h4 {
+  margin-bottom: 15px;
+}
+
+a {
+  color: $black;
+  text-decoration: none;
+
+  &:hover {
+    color: $black;
+    text-decoration: none;
+  }
+}
+
+.wrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  position: relative;
+  flex: 1 0 auto;
+}
+
+.row {
+  justify-content: space-between;
+}
+
+.help-block-error, .help-block {
+  color: #ea0000;
+  font-size: 12px;
+}
+
+.fa-location-arrow {
+  color: #d43609;
+}
+
+ul li:last-child {
+  margin-bottom: 0;
+}
+
+.main-header .sidebar-toggle {
+  padding: 7px 15px;
+}
+
+.carousel-indicators .active, .badge-danger {
+  background: $primary;
+}
+
+.btn:hover, .btn:focus, button:focus {
+  text-decoration: none;
+}
+
+.breadcrumb {
+  margin-bottom: 25px;
+  border: 1px solid $brown;
+  background: white;
+}
+
+.modal-sm .button--primary {
+  padding: 7px 12px !important;
+}
+
+.modal .button--primary {
+  padding: 10px 12px;
+}
+
+.alert {
+  margin-bottom: 25px;
+}
+
+.carousel-control-prev {
+  left: -40px;
+}
+
+.carousel-control-next {
+  right: -40px;
+}
+
+.carousel-control-prev, .carousel-control-next {
+  position: absolute;
+  top: 41%;
+  bottom: auto;
+  z-index: 1;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: auto;
+  color: #fff;
+  text-align: center;
+  opacity: 0.5;
+  transition: opacity 0.15s ease;
+  height: auto;
+}
+
+.carousel-control-next-icon {
+  background: none;
+
+  &:after {
+    content: "\f105";
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    font-size: 45px;
+    color: black;
+  }
+}
+
+.carousel-control-prev-icon {
+  background: none;
+
+  &:after {
+    content: "\f104";
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    font-size: 45px;
+    color: black;
+  }
+}
+
+.table td, .table th {
+  vertical-align: middle;
+}
+
+.table .thead-light th {
+  background: $brown;
+  color: #333;
+  border: none;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+  background: $brown;
+}
+
+.carousel-inner {
+  overflow-y: visible;
+}
+
+.alert .text {
+  margin: 0;
+}
+
+.select2-container--krajee-bs4 .select2-search--dropdown .select2-search__field {
+  height: 35px;
+  padding-left: 10px;
+}
+
+[data-sort]:after {
+  content: "\f0dc";
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  font-size: 16px;
+  padding-left: 5px;
+}
+
+img {
+  max-width: 100%;
+}
+
+p {
+  line-height: 1.9;
+}
+
+.required .control-label:after {
+  content: ' *';
+  color: #ec201c;
+}
+
+.card-info {
+  box-shadow: 0 0 9px #f1f1f1;
+  border-radius: 4px;
+  padding: 15px;
+  margin-bottom: 25px;
+}
+
+.link--mobile {
+  font-weight: 900;
+}
+
+.mobile-phone {
+  display: none;
+}
+
+.box {
+  padding: 15px;
+  border-radius: 4px;
+  box-shadow: 0 0 5px $brown;
+}
+
+.line {
+  height: 1190px;
+  width: 280px;
+  background: linear-gradient(160deg, $primary, transparent);
+  transform: rotate(26deg);
+  position: absolute;
+  top: -365px;
+  right: 130px;
+  z-index: -1;
+
+  &:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: white;
+    position: absolute;
+    bottom: -665px;
+    transform: rotate(64deg);
+  }
+}
+
+.buy {
+  justify-content: center;
+}
+
+.archive-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.archive {
+  display: flex;
+  margin-bottom: 25px;
+  box-shadow: 6px 6px 13px #fee44338;
+  border-radius: 6px;
+  padding: 15px;
+  align-items: center;
+  img {
+    max-width: 650px;
+    height: 300px;
+    width: 570px;
+    margin-right: 50px;
+  }
+}

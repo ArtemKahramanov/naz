@@ -1,0 +1,17 @@
+.catalog {
+
+  &__block {
+    a{
+      transition: all 0.3s ease-in-out;
+    }
+    & > a:hover {
+      color: $primary;
+    }
+  }
+
+  &__text {
+    text-indent: 80px;
+    text-align: justify;
+    margin-bottom: 25px;
+  }
+}

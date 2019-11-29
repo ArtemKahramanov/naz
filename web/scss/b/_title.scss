@@ -1,0 +1,38 @@
+.title {
+  margin-top: 0;
+  margin-bottom: 35px;
+
+  &--max {
+    font-size: 55px;
+    text-transform: uppercase;
+    font-weight: 900;
+    margin-bottom: 13px;
+  }
+
+  &--info {
+    margin: 0;
+    font-size: 19px;
+  }
+
+  &--category {
+    font-size: 19px;
+  }
+
+  &--subcategory {
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: underline #f7e355;
+    margin-bottom: 20px;
+  }
+
+  @media screen and (max-width: 768px) {
+    &--max {
+      font-size: 30px;
+      text-transform: uppercase;
+      font-weight: 900;
+      margin-bottom: 13px;
+      text-align: center
+    }
+  }
+}

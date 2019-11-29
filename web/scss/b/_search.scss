@@ -1,0 +1,25 @@
+.search {
+  display: flex;
+  position: relative;
+  width: 550px;
+
+  i {
+    position: absolute;
+    z-index: 1;
+    top: 9px;
+    right: 12px;
+    color: #7a7a7a;
+  }
+
+  form {
+    width: 100%;
+  }
+
+  .form-group, p {
+    margin: 0;
+  }
+  .help-block, .help-block-error {
+    display: none;
+  }
+}
+

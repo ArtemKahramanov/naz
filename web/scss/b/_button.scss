@@ -1,0 +1,72 @@
+.button {
+  background: #f7e355;
+  border-radius: 25px;
+  color: $black;
+  padding: 12px 19px;
+
+  &--catalog {
+    font-size: 19px;
+    padding: 17px 28px;
+  }
+
+  &--search {
+    border-left: 0;
+  }
+
+  &--primary {
+    font-size: 16px;
+    border: none;
+    padding: 10px 12px;
+    cursor: pointer;
+    background: $primary;
+    transition: $animate;
+    border-radius: 4px;
+    &:hover {
+      color: #fff !important;
+      border: none;
+      text-decoration: none;
+    }
+  }
+
+  &--info {
+    font-size: 15px;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+  }
+
+  &--find {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 35px;
+    background: #d1694c;
+    color: #fff;
+    border: 1px solid #d0d5da;
+    border-radius: 0 4px 4px 0;
+    border-left: 0;
+    padding: 0;
+    &:before {
+      content: "\f002";
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      display: inline-block;
+      width: 38px;
+    }
+  }
+
+  &--menu {
+    color: #fff;
+    font-size: 20px;
+    padding: 0;
+    display: none;
+    border: none;
+    background: transparent;
+  }
+
+  &--user {
+    margin: 0 auto 15px auto;
+  }
+
+}

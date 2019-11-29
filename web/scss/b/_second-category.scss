@@ -1,0 +1,28 @@
+.second-category {
+  box-shadow: 0 0 5px $brown;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  min-height: 250px;
+  border-radius: 4px;
+  transition: $animate;
+  background: #fff;
+  overflow: hidden;
+
+  &:hover {
+    background: #de5c4121;
+  }
+
+  &__image {
+    max-height: 150px;
+    max-width: 300px;
+    margin: 0 auto 15px auto;
+  }
+
+  &__name {
+    margin: auto;
+    font-size: 16px;
+    text-align: center;
+    padding: 0 5px 15px 5px;
+  }
+}

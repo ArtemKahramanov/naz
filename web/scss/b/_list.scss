@@ -1,0 +1,132 @@
+.list {
+  list-style-type: none;
+  padding-left: 25px;
+  margin-bottom: 15px;
+
+  li {
+    margin-bottom: 8px;
+    font-size: 16px;
+    position: relative;
+
+    &:hover:before {
+      opacity: 1;
+    }
+  }
+
+  &--category {
+    li:before {
+      display: none;
+    }
+
+    a:hover {
+      color: $primary;
+    }
+  }
+
+  &--none {
+    padding-left: 0;
+
+    li:before {
+      display: none;
+    }
+  }
+
+  &--menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+
+    .list__item {
+      margin: 0 25px;
+
+      &:last-child {
+        margin-left: 40px;
+        margin-right: 0;
+        @media screen and (max-width: 768px) {
+          & {
+            margin: 0 25px;
+          }
+        }
+      }
+    }
+
+    .link {
+      border-bottom: 1px solid transparent;
+      transition: $animate;
+
+      &:hover {
+        border-bottom: 1px solid #fff;
+      }
+    }
+
+    .item-phone {
+      background: #fff;
+      color: #333;
+      padding: 0 5px;
+      border-radius: 4px;
+
+      .link {
+        color: #333;
+      }
+    }
+  }
+
+  &--no-icon {
+    li i {
+      display: none;
+    }
+
+    a:hover {
+      color: $primary;
+    }
+  }
+
+  &--subcategory {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding: 0;
+
+    li {
+      margin-bottom: 20px;
+      margin-right: 25px;
+
+      &:before {
+        display: none;
+      }
+    }
+
+    a {
+      font-size: 16px;
+      position: relative;
+      border: 1px solid $brown;
+      padding: 15px 25px;
+      box-shadow: 3px 3px 6px $brown;
+      display: block;
+      transition: $animate;
+      border-radius: 4px;
+
+      &:after {
+        content: "\f054";
+        font-family: "Font Awesome 5 Free";
+        color: $primary;
+        font-weight: 900;
+        padding-left: 10px;
+        font-size: 15px;
+        opacity: 0.5;
+        transition: $animate;
+      }
+
+      &:hover {
+        background: #fbfbfb;
+      }
+
+      &:hover:after {
+        opacity: 1;
+      }
+    }
+  }
+}
